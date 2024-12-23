@@ -1,0 +1,116 @@
+.app{
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content{
+    width: 400px;
+    margin: 50px;
+    background-color: white;
+    border-radius: 12px;
+    padding:20px 10px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    position: relative;
+}
+
+form input {
+    flex-basis: 80%;
+    height: 34px;
+    font-size: 15px;
+    border-radius: 12px;
+    outline: 0;
+    border: 0;
+    background-color: rgba(128, 128, 128, 0.173);
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+form button{
+    flex-basis:20%;
+    font-size: 18px;
+    margin-top: 20px;
+    position: absolute;
+    right: 30px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;  
+    background-color: rgb(93, 92, 92);
+    color: white;
+}
+
+form button:active{
+    background-color:rgba(93, 92, 92, 0.913);
+}
+
+h1{
+    display: inline;
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+
+.icon-calendar{
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.outerDiv{
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+
+.outerDiv ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.outerDiv ul li{
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: left;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.067);
+    border-radius: 20px;
+}
+
+.outerDiv ul li:hover{
+    background-color: rgba(128, 128, 128, 0.147) ;
+}
+
+.outerDiv ul li span{
+    right: 20px;
+    top: 2px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+.icon-done{
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+    padding: 1px;
+    border-radius:50% ;
+    color: white;
+    background-color: black;
+}
+
+.completeTodo{
+    text-decoration: line-through;
+}
